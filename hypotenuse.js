@@ -1,10 +1,18 @@
-var side1=document.querySelector("#side1");
-var side2=document.querySelector("#side2");
+var firstSide=document.querySelector("#side1");
+var secondSide=document.querySelector("#side2");
 var calculateBtn=document.querySelector("#btn");
-var output=document.querySelector("#output");
-console.log(side1);
-console.log(side2);
-output.innerText="output will show here";
+var result=document.querySelector("#output");
+
+function calculateHypotenuse(){
+    
+    var a=Number(firstSide.value);
+    var b=Number(secondSide.value);
+    var hypotenuseOfTriangle= Math.sqrt(a*a+b*b).toFixed(3);
+    result.innerText=" Hypotenuse Of the triangle is "+hypotenuseOfTriangle+" units";
+
+      
+}
+calculateBtn.addEventListener("click", calculateHypotenuse);
 
 
 
