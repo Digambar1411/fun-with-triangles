@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    font-family: 'Merriweather', serif;
+}
+:root{
+    --primary-color:#282C34;
+    --secondary-color:#4D5666;
+}
+body{
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    margin: 0px;
+
+}
+.nav-heading{
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size:40px;
+    font-weight: 600;
+    padding:0rem auto;
+    text-align: left;
+}
+h1{
+    margin-bottom: 2rem;
+}
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+
+nav a{
+    color: white;
+}
+
+.link:hover{
+    opacity: 0.8;
+}
+
+label{
+    margin: 0.7rem auto;
+    display: block;
+    font-size: large;
+}
+
+input{
+    margin-bottom: 1rem;
+    margin: 0.5rem auto;
+    display: block;
+    padding: 0.5rem;
+    font-size: large;
+    border-radius: 0.4rem;
+
+}
+.nav-link{
+    text-align: right;
+}
+.navigation{
+    background-color: var(--secondary-color);
+    color: white;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    margin-bottom: 1rem;
+  
+}
+
+#err-msg{
+    display: block;
+    font-size: large;
+    color:lightpink;
+    margin: 1.5rem auto;
+
+}
+button{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.4rem;
+    font-size: large;
+    margin: 0.5rem auto;
+    background-color: var(--secondary-color);
+    color:white;
+}
+#output{
+    display: block;
+    font-size: large;
+    color:cyan;
+    margin: 1.5rem auto;
+}
+
+footer{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size:small;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary-color);
+   
+}
+::placeholder{
+    font-style: 'Bitter', serif;
+    font-style: italic;
+    font-size: large;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: auto;
+    padding-inline-start:0px;
+}
+footer p{
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: small;
+}
+li{
+    display: inline;
+    padding: 0.5rem;
+    padding-inline-start: 0rem;
+}
+
+img{
+    height: 2.5rem;
+    width: 2.5rem;
+    opacity: 0.9;
+   
+}
+
+img:hover{
+    opacity: 0.9;
+}
+
