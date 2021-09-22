@@ -16,7 +16,7 @@ body{
 }
 .nav-heading{
     margin: auto;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
     font-size:40px;
     font-weight: 600;
@@ -117,7 +117,7 @@ footer p{
     padding-bottom: 0rem;
     padding-left: auto;
     padding-right: auto;
-    font-size: small;
+    font-size: medium;
 }
 li{
     display: inline;
