@@ -5,20 +5,25 @@ var errorMsg=document.querySelector("#err-msg");
 var result=document.querySelector("#output");
 
 function calculateHypotenuse(){
+    hideMessage();
     if(firstSide.value && secondSide.value){
-        hideMessage();
-        var a=Number(firstSide.value);
-        var b=Number(secondSide.value);
-        var hypotenuseOfTriangle= Math.sqrt(a*a+b*b).toFixed(3);
-        result.style.display="block";
-        result.innerText=" Hypotenuse of the trianglr is "+hypotenuseOfTriangle+" units";
+        if(firstSide.value!=0 && secondSide.value!=0){
+            
+            var a=Number(firstSide.value);
+            var b=Number(secondSide.value);
+            var hypotenuseOfTriangle= Math.sqrt(a*a+b*b).toFixed(3);
+            result.style.display="block";
+            result.innerText=" Hypotenuse of the trianglr is "+hypotenuseOfTriangle+" units";
     
-    }
-    else{
-        showMessage("Note: You have to fill all the fields and values in them must be greate than zero");
-    }
+        }
+        else{
+            showMessage("Note: Angles must be greater than zero");
+        }
 
-      
+    } 
+    else{
+        showMessage("Note: You have to fill all the fields");
+    } 
 }
 calculateBtn.addEventListener("click", calculateHypotenuse);
 
