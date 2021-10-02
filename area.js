@@ -7,7 +7,7 @@ areaBtn.addEventListener("click", calculateArea);
 
 function calculateArea(){
     hideMessage();
-    if(base.value && height.value){
+    if(base.value!=0 && height.value!=0){
         var triangleBase=Number(base.value);
         var triangleHeight=Number(height.value);
         var areaOfTriangle=(triangleBase*triangleHeight)/2;
