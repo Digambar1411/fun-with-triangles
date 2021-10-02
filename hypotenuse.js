@@ -6,7 +6,7 @@ var result=document.querySelector("#output");
 
 function calculateHypotenuse(){
     hideMessage();
-    if(firstSide.value!=0 && secondSide.value!=0){
+    if(firstSide.value>0 && secondSide.value>0){
             
         var a=Number(firstSide.value);
         var b=Number(secondSide.value);

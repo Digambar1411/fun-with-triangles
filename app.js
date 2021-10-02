@@ -14,7 +14,7 @@ function isTriangle(){
     errorMsg.style.display="none";
     output.style.display="none";
     if(angle1.value && angle2.value  && angle3.value){
-        if(angle1.value !=0 && angle2.value !=0 && angle3.value!=0){
+        if(angle1.value >0 && angle2.value>0 && angle3.value>0){
     
             var sumOfAngles=calculateSumOfAngles(angle1.value, angle2.value, angle3.value);
             if(sumOfAngles===180){
